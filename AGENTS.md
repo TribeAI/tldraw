@@ -12,6 +12,8 @@ This file provides guidance to AI coding agents working in this repository.
 - Respect existing worktree changes. Do not revert user changes unless explicitly asked.
 - Prefer editing existing files over creating new files. Do not add new documentation files unless requested.
 - Use sentence case for headings, titles, labels, and documentation text.
+- Only use subagents when explicitly instructed by the user, do all exploration yourself so you understand the code.
+- Before editing any file, read it in full along with its test file and the package's API report.
 
 ## Repo overview
 
@@ -150,6 +152,7 @@ Store and schema:
 - Test in `packages/editor` for core editor behavior that should not depend on default shapes or UI.
 - Prefer comparing whole objects in assertions when that gives a clearer failure than checking fields one by one.
 - See `skills/write-unit-tests/` and `skills/write-e2e-tests/` for detailed test patterns.
+- Run tests with --reporter=verbose.
 
 ## Documentation and examples
 
